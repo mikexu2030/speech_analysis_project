@@ -1,0 +1,21 @@
+datasets:
+  ravdess:
+    raw_path: data/raw/ravdess
+    processed_path: data/processed/ravdess
+    emotion_map:
+      neutral: 0
+      calm: 0
+      happy: 1
+      sad: 2
+      angry: 3
+      fear: 4
+      disgust: 5
+      surprise: 6
+  
+  cremad:
+    raw_path: data/raw/cremad
+    processed_path: data/processed/cremad
+  
+  esd:
+    raw_path: data/raw/esd
+    processed_path: data/processed/esd

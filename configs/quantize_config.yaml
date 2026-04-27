@@ -1,0 +1,5 @@
+quantization:
+  method: ptq  # ptq or qat
+  calibration_samples: 500
+  input_type: int8
+  output_type: float32
