@@ -1,0 +1,4802 @@
+[
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-07-01-02-01-11.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-03-02-01-01-11.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-05-02-01-01-11.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-06-01-02-02-11.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-04-01-02-01-11.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-04-02-02-01-11.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-04-02-01-02-11.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-02-01-02-02-11.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-06-01-02-01-11.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-06-02-02-01-11.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-01-01-02-01-11.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-03-01-02-01-11.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-06-02-01-02-11.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-06-02-01-01-11.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-05-01-01-02-11.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-08-01-01-02-11.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-01-01-01-01-11.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-04-01-01-01-11.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-08-01-02-02-11.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-07-01-01-01-11.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-05-02-02-01-11.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-07-01-01-02-11.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-05-01-01-01-11.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-03-02-02-02-11.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-03-01-01-01-11.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-08-02-01-01-11.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-04-02-02-02-11.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-02-02-02-01-11.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-02-01-02-01-11.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-04-01-02-02-11.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-04-01-01-02-11.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-02-02-01-01-11.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-03-02-02-01-11.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-05-02-02-02-11.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-05-02-01-02-11.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-08-02-02-02-11.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-08-01-02-01-11.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-03-02-01-02-11.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-08-01-01-01-11.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-02-02-02-02-11.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-05-01-02-02-11.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-04-02-01-01-11.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-02-01-01-02-11.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-05-01-02-01-11.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-07-02-02-02-11.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-06-01-01-02-11.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-02-02-01-02-11.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-07-02-02-01-11.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-06-01-01-01-11.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-07-01-02-02-11.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-03-01-02-02-11.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-06-02-02-02-11.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-01-01-01-02-11.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-01-01-02-02-11.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-03-01-01-02-11.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-07-02-01-01-11.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-07-02-01-02-11.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-08-02-02-01-11.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-08-02-01-02-11.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_11/03-01-02-01-01-01-11.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 11,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 11,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-01-01-02-01-23.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-08-02-02-02-23.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-03-02-01-02-23.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-04-01-01-02-23.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-07-01-02-01-23.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-04-01-02-01-23.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-05-02-02-01-23.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-06-01-02-01-23.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-03-01-01-02-23.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-04-02-01-02-23.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-07-01-01-01-23.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-07-02-01-01-23.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-02-02-02-02-23.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-03-01-02-01-23.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-04-02-02-02-23.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-02-01-01-01-23.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-01-01-01-02-23.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-06-01-01-02-23.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-01-01-01-01-23.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-05-01-01-02-23.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-02-01-02-01-23.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-03-02-02-01-23.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-03-02-01-01-23.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-08-02-02-01-23.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-01-01-02-02-23.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-08-01-01-01-23.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-06-01-01-01-23.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-08-02-01-01-23.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-08-02-01-02-23.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-04-02-01-01-23.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-07-02-02-01-23.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-02-02-01-01-23.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-03-02-02-02-23.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-02-01-01-02-23.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-07-01-01-02-23.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-05-01-02-01-23.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-02-01-02-02-23.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-03-01-01-01-23.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-06-02-02-01-23.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-07-02-02-02-23.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-07-02-01-02-23.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-05-01-01-01-23.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-05-01-02-02-23.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-08-01-02-02-23.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-06-02-01-02-23.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-08-01-02-01-23.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-06-02-02-02-23.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-06-02-01-01-23.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-05-02-02-02-23.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-07-01-02-02-23.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-03-01-02-02-23.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-04-01-02-02-23.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-08-01-01-02-23.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-04-02-02-01-23.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-02-02-01-02-23.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-05-02-01-02-23.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-06-01-02-02-23.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-02-02-02-01-23.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-05-02-01-01-23.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_23/03-01-04-01-01-01-23.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 23,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 23,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-02-02-02-01-07.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-01-01-01-02-07.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-07-02-01-01-07.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-03-02-02-01-07.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-03-01-01-01-07.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-04-02-01-01-07.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-01-01-02-02-07.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-02-01-02-02-07.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-05-02-02-02-07.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-07-01-01-02-07.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-04-02-02-01-07.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-08-02-02-02-07.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-03-01-02-02-07.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-02-02-01-02-07.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-04-01-02-01-07.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-06-02-02-01-07.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-07-02-01-02-07.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-04-01-01-01-07.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-06-02-02-02-07.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-02-02-01-01-07.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-03-02-01-01-07.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-06-02-01-02-07.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-07-02-02-02-07.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-05-02-02-01-07.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-05-02-01-01-07.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-08-01-01-02-07.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-04-02-01-02-07.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-06-01-01-02-07.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-01-01-02-01-07.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-05-01-01-01-07.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-07-01-02-02-07.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-05-01-02-01-07.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-03-01-01-02-07.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-04-01-02-02-07.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-08-01-02-02-07.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-07-01-02-01-07.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-08-02-01-01-07.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-03-02-01-02-07.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-06-01-01-01-07.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-03-01-02-01-07.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-06-02-01-01-07.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-08-01-02-01-07.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-01-01-01-01-07.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-08-02-01-02-07.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-07-01-01-01-07.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-07-02-02-01-07.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-06-01-02-01-07.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-02-01-02-01-07.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-06-01-02-02-07.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-03-02-02-02-07.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-08-01-01-01-07.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-02-01-01-01-07.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-02-01-01-02-07.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-08-02-02-01-07.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-04-01-01-02-07.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-05-02-01-02-07.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-04-02-02-02-07.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-05-01-02-02-07.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-05-01-01-02-07.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_07/03-01-02-02-02-02-07.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 7,
+    "gender": 1,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 7,
+      "gender": 1,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-08-01-01-02-14.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-02-02-01-01-14.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-07-01-02-01-14.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-01-01-01-02-14.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-08-01-02-02-14.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-03-01-02-01-14.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-04-01-01-02-14.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-06-02-01-02-14.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-04-02-02-01-14.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-07-02-02-01-14.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-05-01-02-01-14.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-04-01-02-02-14.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-04-02-01-01-14.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-04-02-02-02-14.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-06-01-01-01-14.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-03-01-01-02-14.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-02-02-02-01-14.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-02-01-02-01-14.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-05-01-01-01-14.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-08-02-02-02-14.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-07-02-01-01-14.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-01-01-01-01-14.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-07-02-02-02-14.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-06-02-01-01-14.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-03-01-02-02-14.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-07-01-02-02-14.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-07-01-01-01-14.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-04-02-01-02-14.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-07-02-01-02-14.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-05-02-02-01-14.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-04-01-01-01-14.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-06-01-02-02-14.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-05-02-01-01-14.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-06-01-01-02-14.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-08-02-01-01-14.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-06-02-02-02-14.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-02-02-02-02-14.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-05-02-01-02-14.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-03-02-02-02-14.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-05-01-01-02-14.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-05-01-02-02-14.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-05-02-02-02-14.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-08-01-01-01-14.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-02-01-01-01-14.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-07-01-01-02-14.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-08-02-02-01-14.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-02-02-01-02-14.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-01-01-02-01-14.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-03-01-01-01-14.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-03-02-02-01-14.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-04-01-02-01-14.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-06-01-02-01-14.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-02-01-01-02-14.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-03-02-01-01-14.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-08-01-02-01-14.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-02-01-02-02-14.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-01-01-02-02-14.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-08-02-01-02-14.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-03-02-01-02-14.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_14/03-01-06-02-02-01-14.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 14,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 14,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-07-01-02-01-18.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-07-02-02-01-18.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-06-01-02-01-18.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-02-02-02-01-18.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-08-02-01-02-18.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-08-02-01-01-18.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-05-02-02-01-18.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-05-01-01-02-18.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-01-01-01-01-18.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-01-01-02-01-18.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-03-01-01-02-18.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-06-02-01-02-18.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-07-02-01-01-18.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-01-01-01-02-18.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-05-01-02-02-18.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-06-02-01-01-18.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-03-01-02-02-18.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-08-02-02-01-18.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-04-02-02-02-18.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-07-01-02-02-18.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-02-01-01-01-18.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-04-01-02-02-18.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-07-02-01-02-18.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-08-01-01-01-18.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-05-02-01-02-18.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-06-02-02-01-18.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-02-02-01-01-18.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-01-01-02-02-18.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-03-02-01-01-18.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-04-02-01-02-18.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-07-01-01-01-18.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-04-01-02-01-18.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-05-01-01-01-18.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-02-02-02-02-18.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-05-02-01-01-18.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-04-01-01-01-18.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-07-02-02-02-18.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-03-02-01-02-18.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-05-02-02-02-18.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-03-02-02-02-18.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-03-02-02-01-18.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-03-01-02-01-18.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-08-01-01-02-18.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-02-01-02-01-18.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-08-02-02-02-18.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-06-01-02-02-18.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-05-01-02-01-18.wav",
+    "dataset": "ravdess",
+    "emotion": 3,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 3,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-07-01-01-02-18.wav",
+    "dataset": "ravdess",
+    "emotion": 5,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 5,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-04-02-01-01-18.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-08-01-02-01-18.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-02-01-01-02-18.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-06-01-01-01-18.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-06-02-02-02-18.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-08-01-02-02-18.wav",
+    "dataset": "ravdess",
+    "emotion": 6,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 6,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-04-02-02-01-18.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 2,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-02-02-01-02-18.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 2,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-02-01-02-02-18.wav",
+    "dataset": "ravdess",
+    "emotion": 0,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 0,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 2,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-03-01-01-01-18.wav",
+    "dataset": "ravdess",
+    "emotion": 1,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 1,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 1
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-04-01-01-02-18.wav",
+    "dataset": "ravdess",
+    "emotion": 2,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 2,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  },
+  {
+    "audio_path": "data/raw/ravdess/audio_speech/Actor_18/03-01-06-01-01-02-18.wav",
+    "dataset": "ravdess",
+    "emotion": 4,
+    "speaker_id": 18,
+    "gender": 0,
+    "language": "en",
+    "metadata": {
+      "emotion": 4,
+      "speaker_id": 18,
+      "gender": 0,
+      "intensity": 1,
+      "statement": 1,
+      "repetition": 2
+    }
+  }
+]

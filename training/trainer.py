@@ -9,12 +9,17 @@ import torch
 import torch.nn as nn
 from torch.optim import AdamW
 from torch.optim.lr_scheduler import CosineAnnealingLR, ReduceLROnPlateau
-from torch.utils.tensorboard import SummaryWriter
+try:
+    from torch.utils.tensorboard import SummaryWriter
+    HAS_TENSORBOARD = True
+except ImportError:
+    HAS_TENSORBOARD = False
+    SummaryWriter = None
 from typing import Dict, Optional, List
 import numpy as np
 from tqdm import tqdm
 
-from ..utils.metrics import compute_uar, compute_war, compute_accuracy, compute_mae, compute_eer
+from utils.metrics import compute_uar, compute_war, compute_accuracy, compute_mae, compute_eer
 
 
 class Trainer:
@@ -68,7 +73,10 @@ class Trainer:
             self.scheduler = None
         
         # TensorBoard
-        self.writer = SummaryWriter(log_dir) if log_dir else None
+        if HAS_TENSORBOARD and log_dir:
+            self.writer = SummaryWriter(log_dir)
+        else:
+            self.writer = None
         
         # 早停
         self.patience = config.get('patience', 15)
@@ -192,12 +200,12 @@ class Trainer:
                 all_gender_preds.extend(preds)
                 all_gender_labels.extend(targets['gender'].cpu().numpy())
             
-            if 'age_value' in outputs:
+            if 'age_value' in outputs and 'age' in targets:
                 preds = outputs['age_value'].squeeze().cpu().numpy()
                 all_age_preds.extend(preds)
                 all_age_labels.extend(targets['age'].cpu().numpy())
             
-            if 'speaker_embedding' in outputs:
+            if 'speaker_embedding' in outputs and 'speaker_id' in targets:
                 embeddings = outputs['speaker_embedding'].cpu().numpy()
                 all_speaker_embeddings.extend(embeddings)
                 all_speaker_labels.extend(targets['speaker_id'].cpu().numpy())

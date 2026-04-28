@@ -46,9 +46,6 @@ class ChannelAttention(nn.Module):
     
     def __init__(self, channels: int, reduction: int = 4):
         super().__init__()
-        self.avg_pool = nn.AdaptiveAvgPool2d(1)
-        self.max_pool = nn.AdaptiveMaxPool2d(1)
-        
         self.fc = nn.Sequential(
             nn.Conv2d(channels, channels // reduction, kernel_size=1, bias=False),
             nn.ReLU(inplace=True),
@@ -57,8 +54,9 @@ class ChannelAttention(nn.Module):
         self.sigmoid = nn.Sigmoid()
     
     def forward(self, x):
-        avg_out = self.fc(self.avg_pool(x))
-        max_out = self.fc(self.max_pool(x))
+        # 使用全局平均池化替代AdaptiveAvgPool2d (ONNX兼容)
+        avg_out = self.fc(x.mean(dim=(2, 3), keepdim=True))
+        max_out = self.fc(x.amax(dim=(2, 3), keepdim=True))
         out = avg_out + max_out
         return self.sigmoid(out)
 
@@ -173,9 +171,6 @@ class SpectralBackbone(nn.Module):
             self.stages.append(stage)
             in_ch = out_ch
         
-        # 频率池化 (将频率维度压缩到1)
-        self.freq_pool = nn.AdaptiveAvgPool2d((1, None))
-        
         # 最终通道数
         self.out_channels = channels[-1]
     
@@ -192,8 +187,11 @@ class SpectralBackbone(nn.Module):
         for stage in self.stages:
             x = stage(x)
         
-        # 频率池化
-        x = self.freq_pool(x)
+        # 频率池化 - 使用固定kernel_size替代adaptive pooling (ONNX兼容)
+        # 输入x的频率维度 = n_mels / (2^len(channels)) 
+        # 例如: 80 -> 40 -> 20 -> 10, 所以kernel_size=10
+        # 使用stride=1和kernel_size等于频率维度
+        x = F.avg_pool2d(x, kernel_size=(10, 1), stride=(10, 1))
         
         return x
     

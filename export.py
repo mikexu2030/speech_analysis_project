@@ -52,27 +52,30 @@ def export_to_onnx(
     # 导出ONNX
     print(f"Exporting to ONNX: {output_path}")
     
-    torch.onnx.export(
-        model,
-        dummy_input,
-        output_path,
-        export_params=True,
-        opset_version=opset_version,
-        do_constant_folding=True,
-        input_names=['mel_spectrogram'],
-        output_names=['speaker_embedding', 'speaker_logits', 
-                       'age_logits', 'age_value',
-                       'gender_logits', 'emotion_logits'],
-        dynamic_axes={
-            'mel_spectrogram': {0: 'batch_size', 3: 'time'},
-            'speaker_embedding': {0: 'batch_size'},
-            'speaker_logits': {0: 'batch_size'},
-            'age_logits': {0: 'batch_size'},
-            'age_value': {0: 'batch_size'},
-            'gender_logits': {0: 'batch_size'},
-            'emotion_logits': {0: 'batch_size'}
-        }
-    )
+    # 使用旧版torch.onnx.export (dynamo=False)
+    with torch.no_grad():
+        torch.onnx.export(
+            model,
+            dummy_input,
+            output_path,
+            export_params=True,
+            opset_version=opset_version,
+            do_constant_folding=True,
+            input_names=['mel_spectrogram'],
+            output_names=['speaker_embedding', 'speaker_logits', 
+                           'age_logits', 'age_value',
+                           'gender_logits', 'emotion_logits'],
+            dynamic_axes={
+                'mel_spectrogram': {0: 'batch_size', 3: 'time'},
+                'speaker_embedding': {0: 'batch_size'},
+                'speaker_logits': {0: 'batch_size'},
+                'age_logits': {0: 'batch_size'},
+                'age_value': {0: 'batch_size'},
+                'gender_logits': {0: 'batch_size'},
+                'emotion_logits': {0: 'batch_size'}
+            },
+            dynamo=False
+        )
     
     print(f"ONNX model exported successfully!")
     
