@@ -1,0 +1,10 @@
+{
+  "speaker_acc": 0.0,
+  "speaker_uar": 0.0,
+  "gender_acc": 0.7366666666666667,
+  "gender_uar": 0.7805555555555556,
+  "emotion_acc": 0.20333333333333334,
+  "emotion_uar": 0.1464285714285714,
+  "age_acc": 1.0,
+  "age_uar": 1.0
+}

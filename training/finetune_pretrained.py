@@ -185,8 +185,8 @@ def train_pretrained_model(
     train_dataset = PretrainedDataset(train_data, feature_extractor)
     val_dataset = PretrainedDataset(val_data, feature_extractor)
     
-    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=2)
-    val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False, num_workers=2)
+    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=0, pin_memory=True if torch.cuda.is_available() else False)
+    val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False, num_workers=0, pin_memory=True if torch.cuda.is_available() else False)
     
     # 模型
     num_speakers = max([s['speaker_id'] for s in train_data]) + 1
@@ -197,12 +197,15 @@ def train_pretrained_model(
     )
     model.to(device)
     
-    # 优化器
+    # 优化器 - 使用更大学习率
     optimizer = torch.optim.AdamW(
         filter(lambda p: p.requires_grad, model.parameters()),
         lr=lr,
         weight_decay=0.01
     )
+    
+    # 学习率调度
+    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=epochs)
     
     # 损失函数
     criterion_ce = nn.CrossEntropyLoss()
@@ -239,10 +242,10 @@ def train_pretrained_model(
                 loss += gender_loss
                 train_correct['gender'] += (outputs['gender_logits'].argmax(dim=1) == batch['gender'].to(device)).sum().item()
             
-            # 情绪损失
+            # 情绪损失 - 增加权重
             if 'emotion_logits' in outputs:
                 emotion_loss = criterion_ce(outputs['emotion_logits'], batch['emotion'].to(device))
-                loss += emotion_loss
+                loss += emotion_loss * 2.0  # 情绪任务权重更高
                 train_correct['emotion'] += (outputs['emotion_logits'].argmax(dim=1) == batch['emotion'].to(device)).sum().item()
             
             # 年龄损失
@@ -251,10 +254,13 @@ def train_pretrained_model(
                 loss += age_loss
             
             loss.backward()
+            torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
             optimizer.step()
             
             train_loss += loss.item()
             train_total += input_values.size(0)
+        
+        scheduler.step()
         
         # 验证
         model.eval()
@@ -277,7 +283,7 @@ def train_pretrained_model(
                     val_correct['gender'] += (outputs['gender_logits'].argmax(dim=1) == batch['gender'].to(device)).sum().item()
                 
                 if 'emotion_logits' in outputs:
-                    loss += criterion_ce(outputs['emotion_logits'], batch['emotion'].to(device))
+                    loss += criterion_ce(outputs['emotion_logits'], batch['emotion'].to(device)) * 2.0
                     val_correct['emotion'] += (outputs['emotion_logits'].argmax(dim=1) == batch['emotion'].to(device)).sum().item()
                 
                 if 'age_logits' in outputs:
@@ -306,12 +312,12 @@ def train_pretrained_model(
 
 
 if __name__ == '__main__':
-    # 使用HuBERT Base训练
+    # 使用HuBERT Base训练 - 减少epoch，增加学习率
     model = train_pretrained_model(
         pretrained_path='models/pretrained/hubert_base_ls960',
         output_dir='models/pretrained_finetuned/hubert_multitask',
-        epochs=10,
-        batch_size=8,
-        lr=1e-4,
+        epochs=5,
+        batch_size=16,
+        lr=5e-4,
         freeze_backbone=True
     )
