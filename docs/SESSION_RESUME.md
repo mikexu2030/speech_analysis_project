@@ -1,160 +1,155 @@
-# 语音四合一识别项目 - 会话恢复文档
+# 语音四合一识别项目 - 会话恢复指南
 
-## 文档信息
-- 更新时间: 2026-04-28
-- 项目路径: /data/mikexu/speech_analysis_project
-- 当前状态: 50epoch训练完成 + 模型评估修复 + 准备INT8量化
+## 项目状态: 阶段2进行中 (预训练模型评测完成)
 
----
-
-## 项目概述
-
-**目标**: 构建一个语音分析系统，实现4个功能：
-1. 声纹识别（分辨说话人）
-2. 年龄段识别
-3. 性别识别
-4. 情绪识别
-
-**约束条件**:
-- 端侧MT9655可运行
-- 优先英语，其次西语，法德意日等
-- 尽量1个模型实现
-- 可demo演示
+**最后更新**: 2026-04-28 21:30
+**会话编号**: 002
+**总Git提交**: 12次
 
 ---
 
 ## 已完成工作
 
-### 1. 项目结构搭建
-- 16个目录，41个文件
-- 核心代码30个Python文件，7240行代码
-- Git提交16次，所有代码版本控制
+### 1. 修复best_model保存逻辑 ✅
+- **文件**: `training/trainer.py` (第341-360行)
+- **问题**: 早停和最佳模型保存基于`val_loss`，但情绪识别任务应基于`val_emotion_uar`
+- **修复**: 修改为基于`val_emotion_uar`保存最佳模型
+  - 当`val_emotion_uar > best_val_metric`时保存best_model
+  - 早停逻辑仍基于val_loss（防止过拟合）
+  - 同时记录val_loss用于早停，val_emotion_uar用于模型选择
 
-### 2. 数据预处理与分割
-- RAVDESS数据集：1440个样本
-- 预处理完成：data/processed/ravdess.json
-- LOSO分割完成：
-  - Train: 16 speakers, 960 samples
-  - Val: 3 speakers, 180 samples
-  - Test: 5 speakers, 300 samples
+### 2. 声纹识别验证 ✅
+- **文件**: `results/evaluation/speaker_verification_results.json`
+- **方法**: 测试集300样本，同说话人vs不同说话人余弦相似度
+- **结果**:
+  - 同类相似度: 0.748
+  - 异类相似度: 0.543
+  - 准确率: 90.67% (阈值0.5)
+  - EER: 8.33%
+- **结论**: 声纹识别效果良好，说话人区分能力强
 
-### 3. 模型训练
-- **5epoch训练**: 情绪14%, 性别0%（预处理不一致导致）
-- **50epoch训练**: 情绪32%, 性别96.33%（修复预处理后）
-- 最佳检查点: checkpoint_epoch_15.pt（早停触发）
-- 模型配置: embedding_dim=192, num_emotions=7, num_speakers=1000
+### 3. 预训练模型评测 (300样本) ✅
+- **文件**: `results/evaluation/pretrained_models_comparison.json`
 
-### 4. 模型导出与评估
-- ONNX模型导出: models/exported/model.onnx (16.21 MB)
-- 推理速度: ~8ms (CPU)
-- 评估脚本: batch_evaluate.py
+| 模型 | 情绪识别 | 性别识别 | 同类相似 | 异类相似 |
+|------|---------|---------|---------|---------|
+| Wav2Vec 2.0 Base | 41.7% | 79.0% | 0.9758 | 0.9738 |
+| **HuBERT Base** | **55.0%** | **100.0%** | 0.9176 | 0.8709 |
+| WavLM Base | 54.7% | 96.0% | 0.9255 | 0.8955 |
+| 自训练 (INT8) | 33.0% | 96.3% | 0.748 | 0.543 |
 
-### 5. 关键Bug修复
-1. **数据预处理不一致**: demo_inference使用n_fft=2048/hop=512，训练使用n_fft=1024/hop=256
-2. **模型类别数不匹配**: 模型输出7类，但评估期望8类（surprised合并到disgust）
-3. **best_model保存逻辑**: 基于val_loss保存，但val_loss未改善导致保存epoch 0
-
----
-
-## 当前模型性能 (Epoch 15, ONNX, 300样本)
-
-| 任务 | 准确率 | 备注 |
-|------|--------|------|
-| 情绪识别 | 32.00% (96/300) | 7类分类，随机基线14% |
-| 性别识别 | 96.33% (289/300) | 2类分类，非常好 |
-| 推理速度 | 8.22 ms | CPU单线程 |
-| 模型大小 | 16.21 MB | FP32 ONNX |
+**关键发现**:
+- HuBERT Base在情绪识别上表现最佳 (55.0%)
+- 所有预训练模型在性别识别上都远超自训练模型
+- Wav2Vec 2.0的声纹相似度过高（0.9758 vs 0.9738），区分度差
+- HuBERT和WavLM的声纹区分度更好（同类0.92 vs 异类0.87）
 
 ---
 
-## 当前进行中的任务
+## 进行中工作
 
-### 任务1: 模型INT8量化
-- 状态: 待执行
-- 目标: 减少模型大小至~4MB，加速推理
-- 方法: ONNX动态量化
+### 1. 模型下载 (进行中)
+- **后台进程**: `proc_f241b941d0fc` (PID: 1077585)
+- **日志**: `logs/download_models_fast.log`
+- **已下载**:
+  - ✅ wav2vec2-base-960h (360MB)
+  - ✅ hubert-base-ls960 (360MB)
+  - ✅ wavlm-base (360MB)
+- **正在下载**:
+  - ⏳ wav2vec2-large-960h (~1.2GB)
+  - ⏳ wav2vec2-large-lv60
+  - ⏳ hubert-large-ls960-ft (~1.2GB)
+  - ⏳ wavlm-base-plus
+  - ⏳ wavlm-large (~1.2GB)
+- **方法**: 使用huggingface_hub snapshot_download，通过hf-mirror.com镜像
 
-### 任务2: 下载更多数据集
-- 状态: 待执行
-- 目标: Common Voice（年龄/性别，多语言）
-- 预期: 提升情绪识别准确率至>50%
+### 2. 数据集下载 (暂停)
+- **问题**: Common Voice 11.0数据集格式变更，streaming模式失败
+- **替代方案**: 使用本地RAVDESS数据（已有1500样本）
+- **如需更多数据**: 手动下载Common Voice或VoxCeleb
+
+---
+
+## 模型文件状态
+
+```
+models/pretrained/
+├── ecapa_tdnn/              # 声纹模型 (已有)
+├── emotion2vec_plus_base/   # 情绪模型 (已有)
+├── hubert_base_ls960/       # HuBERT Base (已有, 360MB)
+├── wav2vec2_base_960h/      # Wav2Vec 2.0 Base (已有, 360MB)
+├── wav2vec2_large_960h/     # Wav2Vec 2.0 Large (下载中)
+├── wav2vec2_large_lv60/     # Wav2Vec 2.0 Large LV60 (待下载)
+├── wavlm_base/              # WavLM Base (已有, 360MB)
+├── wavlm_base_plus/         # WavLM Base+ (下载中)
+└── wavlm_large/             # WavLM Large (下载中)
+```
 
 ---
 
 ## 下一步计划
 
-### 优先级1: 模型INT8量化
-```bash
-cd /data/mikexu/speech_analysis_project
-python3 export.py \
-  --model checkpoints/ravdess_multitask_50ep/checkpoints/checkpoint_epoch_15.pt \
-  --output_dir models/exported \
-  --export_onnx --quantize --benchmark
-```
+### 立即执行 (当前会话)
+1. **等待模型下载完成** - 监控`proc_f241b941d0fc`
+2. **评测large模型** - 下载完成后评测wav2vec2-large, hubert-large, wavlm-large
+3. **对比Base vs Large** - 分析模型规模对性能的影响
 
-### 优先级2: 下载Common Voice数据集
-```bash
-export HF_ENDPOINT=https://hf-mirror.com
-python3 data/download_common_voice.py
-```
-
-### 优先级3: 端到端演示
-```bash
-python3 demo_inference.py --model models/exported/model_int8.onnx --audio sample.wav
-```
+### 后续执行 (新会话)
+4. **模型微调** - 使用最佳预训练模型进行微调
+   - 冻结backbone，只训练分类头
+   - 解冻backbone进行端到端训练
+5. **多语言数据增强** - 使用Common Voice或VoxCeleb
+6. **模型量化部署** - INT8量化，ONNX导出
+7. **Web演示** - Gradio界面
 
 ---
 
-## 重要文件路径
+## 关键文件路径
 
 | 文件 | 路径 |
 |------|------|
-| 项目根目录 | /data/mikexu/speech_analysis_project |
-| 训练脚本 | training/train.py |
-| 导出脚本 | export.py |
-| 评估脚本 | batch_evaluate.py |
-| ONNX模型 | models/exported/model.onnx |
-| 训练配置 | configs/train_config.yaml |
-| 数据分割 | data/splits/*.json |
-| 训练日志 | logs/train_50epoch.log |
-| 评估结果 | results/evaluation/batch_eval.json |
+| 项目根目录 | `/data/mikexu/speech_analysis_project/` |
+| 训练脚本 | `training/train.py` |
+| 训练器 | `training/trainer.py` |
+| 模型目录 | `models/` |
+| 预训练模型 | `models/pretrained/` |
+| 评测结果 | `results/evaluation/` |
+| 数据目录 | `data/` |
+| 会话恢复 | `docs/SESSION_RESUME.md` |
 
 ---
 
-## 模型架构参数
+## 技术栈
 
-```python
-MultiTaskSpeechModel(
-    n_mels=80,
-    backbone_channels=[32, 64, 128, 256],
-    embedding_dim=192,
-    num_speakers=1000,
-    num_age_groups=5,
-    num_emotions=7,  # 注意: 7类（surprised合并到disgust）
-    use_attention=True,
-    lightweight=False
-)
+- **框架**: PyTorch 2.x, transformers 4.x
+- **音频**: torchaudio, librosa, soundfile
+- **ML**: scikit-learn, numpy, pandas
+- **量化**: bitsandbytes (INT8)
+- **GPU**: CUDA 12.x, 4x NVIDIA A40
+
+## 注意事项
+
+1. **GPU使用**: GPU 2,3用于模型下载和评测
+2. **网络**: 使用hf-mirror.com镜像加速HuggingFace下载
+3. **内存**: 大模型（1.2GB+）需要更多GPU内存
+4. **数据**: RAVDESS数据集性别不平衡（60%男性）
+
+## 恢复命令
+
+```bash
+# 进入项目目录
+cd /data/mikexu/speech_analysis_project
+
+# 检查模型下载状态
+tail -f logs/download_models_fast.log
+
+# 检查已下载模型
+ls -la models/pretrained/
+
+# 运行评测
+python3 -c "import torch; print(f'GPU: {torch.cuda.is_available()}')"
 ```
 
 ---
 
-## 新会话恢复步骤
-
-开启新对话后，粘贴以下内容：
-
-```
-继续语音四合一识别项目。当前状态：
-1. 50epoch训练完成，最佳检查点: checkpoint_epoch_15.pt
-2. ONNX模型已导出 (16.21MB)，评估: 情绪32%, 性别96%
-3. 已修复数据预处理不一致和类别数不匹配问题
-4. 演示脚本已完成 (demo_inference.py + batch_evaluate.py)
-
-请执行：
-1. 模型INT8量化
-2. 下载Common Voice数据集
-3. 创建端到端演示
-```
-
----
-
-*本文档用于会话恢复，请在新会话开始时加载。*
+*本文件由AI助手自动维护，每次会话结束时更新*

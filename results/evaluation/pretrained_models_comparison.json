@@ -1,0 +1,20 @@
+{
+  "wav2vec2_base": {
+    "emotion_acc": 0.4166666666666667,
+    "gender_acc": 0.79,
+    "same_speaker_sim": 0.9758192270758462,
+    "diff_speaker_sim": 0.9737577378220028
+  },
+  "hubert_base": {
+    "emotion_acc": 0.55,
+    "gender_acc": 1.0,
+    "same_speaker_sim": 0.9176484135651992,
+    "diff_speaker_sim": 0.8709373795655039
+  },
+  "wavlm_base": {
+    "emotion_acc": 0.5466666666666666,
+    "gender_acc": 0.96,
+    "same_speaker_sim": 0.9255255807456324,
+    "diff_speaker_sim": 0.8955236860613028
+  }
+}

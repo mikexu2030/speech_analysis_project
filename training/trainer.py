@@ -346,7 +346,7 @@ class Trainer:
             if epoch % save_every == 0:
                 self.save_checkpoint(f'checkpoint_epoch_{epoch}.pt')
             
-            # 早停检查
+            # 早停检查 - 基于val_loss
             val_loss = val_metrics['val_loss']
             if val_loss < self.best_val_loss:
                 self.best_val_loss = val_loss
@@ -358,6 +358,26 @@ class Trainer:
                 if self.epochs_without_improvement >= self.patience:
                     print(f"\nEarly stopping at epoch {epoch}")
                     break
+            
+            # 额外：基于val_emotion_uar保存最佳情绪模型
+            if 'val_emotion_uar' in val_metrics:
+                current_emotion_uar = val_metrics['val_emotion_uar']
+                if not hasattr(self, 'best_emotion_uar'):
+                    self.best_emotion_uar = 0.0
+                if current_emotion_uar > self.best_emotion_uar:
+                    self.best_emotion_uar = current_emotion_uar
+                    self.save_checkpoint('best_emotion_model.pt', is_best=True)
+                    print(f"  Saved best emotion model (UAR: {current_emotion_uar:.4f})")
+            
+            # 额外：基于val_gender_acc保存最佳性别模型
+            if 'val_gender_acc' in val_metrics:
+                current_gender_acc = val_metrics['val_gender_acc']
+                if not hasattr(self, 'best_gender_acc'):
+                    self.best_gender_acc = 0.0
+                if current_gender_acc > self.best_gender_acc:
+                    self.best_gender_acc = current_gender_acc
+                    self.save_checkpoint('best_gender_model.pt', is_best=True)
+                    print(f"  Saved best gender model (Acc: {current_gender_acc:.4f})")
         
         print("\nTraining completed!")
         if self.writer:
