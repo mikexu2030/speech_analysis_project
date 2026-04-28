@@ -43,3 +43,6 @@ outputs/
 # Keep structure but ignore content
 !data/splits/.gitkeep
 !checkpoints/.gitkeep
+models/quantized/hubert_multitask_int8.pt
+models/quantized/hubert_multitask.onnx
+models/quantized/hubert_multitask.onnx.data
