@@ -4,7 +4,7 @@
 
 **最后更新**: 2026-04-28 23:45
 **会话编号**: 003
-**总Git提交**: 15次
+**总Git提交**: 16次
 
 ---
 
@@ -45,7 +45,7 @@
   - Batch size: 16
   - LR: 5e-4
   - 设备: CPU (每epoch约4分钟)
-- **最终训练结果 (Epoch 5)**:
+- **最终训练结果 (Epoch 2, best model)**:
   - Train Loss: 6.3411, Val Loss: 7.0507
   - Train Acc: Speaker=69.1%, Gender=95.8%, Emotion=41.2%
   - Val Acc: Speaker=0.0%, Gender=100.0%, Emotion=39.4%
@@ -68,7 +68,7 @@
 **注意**: ONNX模型仅包含任务头权重，backbone权重存储在`.onnx.data`文件中(363MB)。INT8动态量化对backbone效果有限，因为backbone已冻结且主要为Transformer层。
 
 ### 7. Git版本控制 ✅
-- 总提交: 15次
+- 总提交: 16次
 - 量化脚本已提交: `fc7637c`
 - 量化模型已加入gitignore (726MB二进制不进入版本控制)
 
