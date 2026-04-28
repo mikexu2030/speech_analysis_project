@@ -1,0 +1,37 @@
+{
+  "emotion2vec_plus_base": {
+    "load_success": false,
+    "error": "PytorchStreamReader failed reading zip archive: failed finding central directory. This is an internal miniz error. If you are seeing this error, there is a high likelihood that your checkpoint file is corrupted. This can happen if the checkpoint was not saved properly, was transferred incorrectly, or the file was modified after saving."
+  },
+  "wav2vec2_base_960h": {
+    "load_success": true,
+    "inference_test": true,
+    "output_shape": "torch.Size([1, 49, 768])",
+    "params": 94371712,
+    "params_m": "94.4M",
+    "hidden_size": 768
+  },
+  "hubert_base_ls960": {
+    "load_success": true,
+    "inference_test": true,
+    "output_shape": "torch.Size([1, 49, 768])",
+    "params": 94371712,
+    "params_m": "94.4M",
+    "hidden_size": 768
+  },
+  "wavlm_base": {
+    "load_success": true,
+    "inference_test": true,
+    "output_shape": "torch.Size([1, 49, 768])",
+    "params": 94381936,
+    "params_m": "94.4M",
+    "hidden_size": 768
+  },
+  "ecapa_tdnn": {
+    "load_success": true,
+    "inference_test": true,
+    "model_size_mb": 79.45698356628418,
+    "task": "speaker",
+    "note": "SpeechBrain format - needs custom inference code"
+  }
+}

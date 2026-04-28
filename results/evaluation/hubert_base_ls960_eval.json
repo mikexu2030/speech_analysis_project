@@ -1,0 +1,8 @@
+{
+  "model_name": "hubert_base_ls960",
+  "display_name": "HuBERT Base",
+  "timestamp": "2026-04-28 15:32:37",
+  "load_success": false,
+  "inference_test": false,
+  "error": "expected str, bytes or os.PathLike object, not NoneType"
+}

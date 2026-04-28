@@ -1,0 +1,8 @@
+{
+  "model_name": "wav2vec2_base_960h",
+  "display_name": "wav2vec 2.0 Base",
+  "timestamp": "2026-04-28 15:32:31",
+  "load_success": false,
+  "inference_test": false,
+  "error": "PytorchStreamReader failed reading zip archive: failed finding central directory. This is an internal miniz error. If you are seeing this error, there is a high likelihood that your checkpoint file is corrupted. This can happen if the checkpoint was not saved properly, was transferred incorrectly, or the file was modified after saving."
+}
