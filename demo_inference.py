@@ -63,16 +63,25 @@ def load_audio(audio_path: str, sr: int = 16000, max_length: float = 3.0) -> np.
     return audio
 
 
-def extract_mel_spectrogram(audio: np.ndarray, sr: int = 16000, n_mels: int = 80) -> np.ndarray:
-    """提取Mel频谱图"""
-    mel_spec = librosa.feature.melspectrogram(
-        y=audio,
+def extract_mel_spectrogram(audio: np.ndarray, sr: int = 16000, n_mels: int = 80, target_length: int = 300) -> np.ndarray:
+    """提取Mel频谱图 (与训练时相同的预处理)"""
+    from utils.audio_utils import extract_melspectrogram, pad_or_truncate, normalize_feature
+    
+    # 使用与训练相同的参数
+    mel_spec = extract_melspectrogram(
+        waveform=audio,
         sr=sr,
         n_mels=n_mels,
-        n_fft=2048,
-        hop_length=512
+        n_fft=1024,
+        hop_length=256
     )
-    mel_spec = librosa.power_to_db(mel_spec, ref=np.max)
+    
+    # 填充/截断到目标长度
+    mel_spec = pad_or_truncate(mel_spec, target_length, axis=-1)
+    
+    # 实例标准化 (与训练一致)
+    mel_spec, _, _ = normalize_feature(mel_spec, method='instance')
+    
     return mel_spec
 
 

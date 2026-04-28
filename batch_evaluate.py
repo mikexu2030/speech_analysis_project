@@ -49,7 +49,8 @@ def evaluate_test_set(model_path: str, test_json: str, backend: str = 'onnx'):
     latencies = []
     
     # 遍历测试样本
-    for sample in tqdm(test_data[:100], desc='Evaluating'):  # 先测试100个
+    eval_count = min(300, len(test_data))  # 评估所有可用样本
+    for sample in tqdm(test_data[:eval_count], desc='Evaluating'):
         audio_path = sample['audio_path']
         
         if not os.path.exists(audio_path):
@@ -68,15 +69,19 @@ def evaluate_test_set(model_path: str, test_json: str, backend: str = 'onnx'):
             results = predict_pytorch(model, mel_spec, device)
         latencies.append((time.time() - start) * 1000)
         
-        # 情绪
+    # 情绪
         true_emotion = sample.get('emotion', -1)
         pred_emotion_label = results['emotion']['label']
-        # 从EMOTION_LABELS反向查找索引
+        # 从EMOTION_LABELS反向查找索引 (模型输出7类: 0-6)
         pred_emotion = None
         for idx, label in EMOTION_LABELS.items():
             if label == pred_emotion_label:
                 pred_emotion = idx
                 break
+        
+        # 处理surprised样本 (标签7映射到6，因为模型只有7类)
+        if true_emotion == 7:
+            true_emotion = 6  # surprised和disgust合并
         
         if true_emotion >= 0 and pred_emotion is not None:
             emotion_confusion[true_emotion][pred_emotion] += 1
@@ -107,15 +112,15 @@ def evaluate_test_set(model_path: str, test_json: str, backend: str = 'onnx'):
         print(f"情绪识别准确率: {emotion_correct/total:.2%} ({emotion_correct}/{total})")
         print(f"性别识别准确率: {gender_correct/total:.2%} ({gender_correct}/{total})")
     
-    print("\n情绪混淆矩阵:")
-    emotions = ['neutral', 'calm', 'happy', 'sad', 'angry', 'fearful', 'disgust', 'surprised']
+    print("\n情绪混淆矩阵 (7类: 0-6, surprised合并到disgust):")
+    emotions = ['neutral', 'calm', 'happy', 'sad', 'angry', 'fearful', 'disgust+surprised']
     print(f"{'True\\Pred':>10}", end='')
     for e in emotions:
         print(f"{e:>8}", end='')
     print()
-    for true_idx in range(8):
+    for true_idx in range(7):
         print(f"{emotions[true_idx]:>10}", end='')
-        for pred_idx in range(8):
+        for pred_idx in range(7):
             print(f"{emotion_confusion[true_idx][pred_idx]:>8}", end='')
         print()
     

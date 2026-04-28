@@ -229,8 +229,17 @@ def benchmark_model(
         # PyTorch模型
         model = torch.load(model_path, map_location='cpu')
         if isinstance(model, dict):
-            # 加载检查点
-            model_obj = MultiTaskSpeechModel()
+            # 加载检查点 - 使用与训练时相同的配置
+            model_obj = MultiTaskSpeechModel(
+                n_mels=80,
+                backbone_channels=[32, 64, 128, 256],
+                embedding_dim=192,
+                num_speakers=1000,
+                num_age_groups=5,
+                num_emotions=7,
+                use_attention=True,
+                lightweight=False
+            )
             model_obj.load_state_dict(model['model_state_dict'])
             model = model_obj
         model.eval()
