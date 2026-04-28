@@ -2,9 +2,9 @@
 
 ## 项目状态: 全部阶段完成 ✅
 
-**最后更新**: 2026-04-28 23:30
+**最后更新**: 2026-04-28 23:45
 **会话编号**: 003
-**总Git提交**: 13次
+**总Git提交**: 15次
 
 ---
 
@@ -66,6 +66,11 @@
 | INT8量化 | 361.2 MB | 99.5% |
 
 **注意**: ONNX模型仅包含任务头权重，backbone权重存储在`.onnx.data`文件中(363MB)。INT8动态量化对backbone效果有限，因为backbone已冻结且主要为Transformer层。
+
+### 7. Git版本控制 ✅
+- 总提交: 15次
+- 量化脚本已提交: `fc7637c`
+- 量化模型已加入gitignore (726MB二进制不进入版本控制)
 
 ---
 
@@ -157,6 +162,9 @@ python3 training/quantize_export.py --export-onnx --export-int8 --benchmark
 
 # 查看日志
 tail -f logs/quantize_export.log
+
+# Git状态
+git log --oneline -5
 ```
 
 ---
