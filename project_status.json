@@ -1,0 +1,122 @@
+{
+  "timestamp": "2026-04-28 10:50:34",
+  "base_dir": "/data/mikexu/speech_analysis_project",
+  "datasets": {
+    "ravdess": {
+      "exists": true,
+      "has_audio": false,
+      "name": "RAVDESS",
+      "url": "https://zenodo.org/record/1188976/files/Audio_Speech_Actors_01-24.zip",
+      "size_mb": 208,
+      "emotions": [
+        "neutral",
+        "calm",
+        "happy",
+        "sad",
+        "angry",
+        "fearful",
+        "disgust",
+        "surprised"
+      ],
+      "language": "en",
+      "actors": 24,
+      "samples": 2452,
+      "priority": 1,
+      "download_method": "direct"
+    },
+    "cremad": {
+      "exists": false,
+      "has_audio": false,
+      "name": "CREMA-D",
+      "url": "https://github.com/CheyneyComputerScience/CREMA-D",
+      "size_mb": 1200,
+      "emotions": [
+        "neutral",
+        "happy",
+        "sad",
+        "angry",
+        "fear",
+        "disgust"
+      ],
+      "language": "en",
+      "actors": 91,
+      "samples": 7442,
+      "priority": 2,
+      "download_method": "manual"
+    },
+    "esd": {
+      "exists": false,
+      "has_audio": false,
+      "name": "ESD",
+      "url": "https://github.com/HLTSingapore/Emotional-Speech-Data",
+      "size_mb": 2900,
+      "emotions": [
+        "neutral",
+        "happy",
+        "angry",
+        "sad",
+        "surprise"
+      ],
+      "language": "en+zh",
+      "actors": 20,
+      "samples": 17500,
+      "priority": 3,
+      "download_method": "manual"
+    },
+    "iemocap": {
+      "exists": false,
+      "has_audio": false,
+      "name": "IEMOCAP",
+      "url": "https://sail.usc.edu/iemocap/iemocap_release.htm",
+      "size_mb": 12000,
+      "emotions": [
+        "neutral",
+        "happy",
+        "sad",
+        "angry",
+        "excited",
+        "frustrated"
+      ],
+      "language": "en",
+      "actors": 10,
+      "samples": 10039,
+      "priority": 4,
+      "download_method": "request"
+    },
+    "emodb": {
+      "exists": false,
+      "has_audio": false,
+      "name": "EmoDB",
+      "url": "http://emodb.bilderbar.info/download/",
+      "size_mb": 30,
+      "emotions": [
+        "neutral",
+        "happy",
+        "sad",
+        "angry",
+        "fear",
+        "disgust",
+        "boredom"
+      ],
+      "language": "de",
+      "actors": 10,
+      "samples": 535,
+      "priority": 5,
+      "download_method": "direct"
+    }
+  },
+  "models": {},
+  "completed_steps": [
+    "项目结构搭建",
+    "评测报告脚本修复",
+    "添加Emotion2Vec+和GMP-ATL模型",
+    "生成详细评测报告"
+  ],
+  "next_steps": [
+    "下载RAVDESS数据集",
+    "下载CREMA-D数据集",
+    "安装模型依赖",
+    "运行Emotion2Vec+评测",
+    "运行其他模型评测"
+  ]
+}

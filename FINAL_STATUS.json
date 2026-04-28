@@ -1,0 +1,109 @@
+{
+  "project_dir": "/data/mikexu/speech_analysis_project",
+  "timestamp": "2025-04-28",
+  "completed_tasks": 9,
+  "total_tasks": 9,
+  "file_counts": {
+    "root": {
+      "py": 7,
+      "md": 4,
+      "total": 15
+    },
+    "utils": {
+      "py": 5,
+      "md": 0,
+      "total": 5
+    },
+    "evaluation": {
+      "py": 6,
+      "md": 0,
+      "total": 6
+    },
+    "training": {
+      "py": 4,
+      "md": 0,
+      "total": 4
+    },
+    "demo": {
+      "py": 4,
+      "md": 0,
+      "total": 4
+    },
+    "models": {
+      "py": 4,
+      "md": 0,
+      "total": 4
+    },
+    "data": {
+      "py": 4,
+      "md": 0,
+      "total": 4
+    },
+    "quantization": {
+      "py": 5,
+      "md": 0,
+      "total": 5
+    },
+    "docs": {
+      "py": 0,
+      "md": 3,
+      "total": 3
+    },
+    "outputs": {
+      "py": 0,
+      "md": 2,
+      "total": 5
+    }
+  },
+  "datasets": {
+    "ravdess": {
+      "downloaded": true,
+      "samples": 1440,
+      "speakers": 24,
+      "emotions": 8,
+      "languages": [
+        "en"
+      ]
+    },
+    "cremad": {
+      "downloaded": false,
+      "note": "Requires manual download"
+    },
+    "esd": {
+      "downloaded": false,
+      "note": "Requires manual download"
+    },
+    "iemocap": {
+      "downloaded": false,
+      "note": "Requires registration"
+    }
+  },
+  "models": {
+    "custom_multitask": {
+      "status": "implemented",
+      "params": 803967,
+      "size_mb": 3.07,
+      "int8_size_mb": 0.77,
+      "tasks": [
+        "speaker",
+        "age",
+        "gender",
+        "emotion"
+      ],
+      "inference_ms_cpu": 17.5,
+      "estimated_mt9655_ms": "87-175"
+    },
+    "emotion2vec_large": {
+      "status": "in_report",
+      "params": 316000000,
+      "size_mb": 316,
+      "note": "Requires network to download"
+    },
+    "emotion2vec_base": {
+      "status": "in_report",
+      "params": 95000000,
+      "size_mb": 95,
+      "note": "Requires network to download"
+    }
+  }
+}
