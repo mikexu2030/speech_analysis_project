@@ -1,4 +1,5 @@
 {
   "emotion2vec_plus_base": "failed: Got: ConnectError: [Errno 101] Network is unreacha",
-  "wav2vec2_base_960h": "failed: Got: ConnectError: [Errno 101] Network is unreacha"
+  "wav2vec2_base_960h": "failed: Got: ConnectError: [Errno 101] Network is unreacha",
+  "wavlm_base": "restored_from_cache"
 }
