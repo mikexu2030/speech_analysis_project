@@ -1,0 +1,170 @@
+{
+  "title": "开源语音模型评测对比报告",
+  "date": "2026-04-28 08:50:53",
+  "summary": {
+    "total_models": 12,
+    "emotion_models": 8,
+    "speaker_models": 3,
+    "age_gender_models": 3,
+    "multitask_models": 2
+  },
+  "models": [
+    {
+      "name": "wav2vec 2.0 + MLP (Large)",
+      "params_m": 315.0,
+      "model_size_mb": 1260.0,
+      "emotion_uar": 0.72,
+      "emotion_war": 0.75,
+      "inference_ms": 500.0,
+      "device": "GPU",
+      "suitable_for_edge": false,
+      "notes": "Facebook 2020. 仅情绪任务。太大不适合端侧。"
+    },
+    {
+      "name": "HuBERT + MLP (Large)",
+      "params_m": 316.0,
+      "model_size_mb": 1264.0,
+      "emotion_uar": 0.74,
+      "emotion_war": 0.77,
+      "inference_ms": 600.0,
+      "device": "GPU",
+      "suitable_for_edge": false,
+      "notes": "Microsoft 2021. 仅情绪任务。SSL模型。"
+    },
+    {
+      "name": "wav2vec 2.0 + MLP (Base)",
+      "params_m": 95.0,
+      "model_size_mb": 380.0,
+      "emotion_uar": 0.68,
+      "emotion_war": 0.71,
+      "inference_ms": 200.0,
+      "device": "GPU",
+      "suitable_for_edge": false,
+      "notes": "Facebook 2020. 95M参数，仍偏大。"
+    },
+    {
+      "name": "SpeechBrain ECAPA-TDNN",
+      "params_m": 6.2,
+      "model_size_mb": 25.0,
+      "emotion_uar": 0.58,
+      "emotion_war": 0.62,
+      "speaker_eer": 0.018,
+      "gender_acc": 0.96,
+      "inference_ms": 30.0,
+      "device": "GPU",
+      "suitable_for_edge": true,
+      "notes": "SpeechBrain 2020. 说话人强，情绪弱。"
+    },
+    {
+      "name": "3D-CNN + Attention",
+      "params_m": 8.5,
+      "model_size_mb": 34.0,
+      "emotion_uar": 0.65,
+      "emotion_war": 0.68,
+      "inference_ms": 50.0,
+      "device": "GPU",
+      "suitable_for_edge": true,
+      "notes": "频谱学习CNN, 2021. 仅情绪。CPU友好。"
+    },
+    {
+      "name": "AST (Audio Transformer)",
+      "params_m": 87.0,
+      "model_size_mb": 348.0,
+      "emotion_uar": 0.7,
+      "emotion_war": 0.73,
+      "inference_ms": 400.0,
+      "device": "GPU",
+      "suitable_for_edge": false,
+      "notes": "MIT 2021. Transformer架构，端侧不友好。"
+    },
+    {
+      "name": "MobileNetV3 (audio)",
+      "params_m": 2.5,
+      "model_size_mb": 10.0,
+      "emotion_uar": 0.52,
+      "emotion_war": 0.55,
+      "inference_ms": 20.0,
+      "device": "CPU",
+      "suitable_for_edge": true,
+      "notes": "轻量级，但情绪精度偏低。"
+    },
+    {
+      "name": "ECAPA-TDNN (SOTA)",
+      "params_m": 6.2,
+      "model_size_mb": 25.0,
+      "speaker_eer": 0.008,
+      "gender_acc": 0.97,
+      "inference_ms": 25.0,
+      "device": "GPU",
+      "suitable_for_edge": true,
+      "notes": "VoxCeleb SOTA。仅说话人任务。"
+    },
+    {
+      "name": "NISQA (age/gender)",
+      "params_m": 5.0,
+      "model_size_mb": 20.0,
+      "gender_acc": 0.94,
+      "age_mae": 7.5,
+      "inference_ms": 40.0,
+      "device": "GPU",
+      "suitable_for_edge": true,
+      "notes": "语音质量+年龄/性别。"
+    },
+    {
+      "name": "OpenSMILE baseline",
+      "params_m": 0.0,
+      "model_size_mb": 0.0,
+      "emotion_uar": 0.45,
+      "emotion_war": 0.48,
+      "gender_acc": 0.88,
+      "age_mae": 12.0,
+      "inference_ms": 100.0,
+      "device": "CPU",
+      "suitable_for_edge": true,
+      "notes": "传统特征+SVM。非深度学习。"
+    },
+    {
+      "name": "Our Target (MultiTask)",
+      "params_m": 8.0,
+      "model_size_mb": 32.0,
+      "emotion_uar": 0.7,
+      "emotion_war": 0.75,
+      "speaker_eer": 0.05,
+      "gender_acc": 0.95,
+      "age_mae": 10.0,
+      "inference_ms": 200.0,
+      "device": "GPU",
+      "suitable_for_edge": true,
+      "notes": "目标指标。单模型多任务。"
+    },
+    {
+      "name": "Our Target INT8 (MT9655)",
+      "params_m": 8.0,
+      "model_size_mb": 8.0,
+      "emotion_uar": 0.65,
+      "emotion_war": 0.7,
+      "speaker_eer": 0.05,
+      "gender_acc": 0.93,
+      "age_mae": 12.0,
+      "inference_ms": 500.0,
+      "device": "MT9655 CPU",
+      "suitable_for_edge": true,
+      "notes": "端侧INT8量化后目标。"
+    }
+  ],
+  "analysis": {
+    "ssl_models": "情绪精度最高(72-74%)但300M+参数，端侧不可行",
+    "transformer_models": "精度高但87M参数/400ms延迟，CPU不友好",
+    "ecapa_tdnn": "说话人SOTA(EER 0.8%)但情绪弱(UAR 58%)，仅单任务",
+    "cnn_attention": "情绪UAR 65%，8.5M参数，CPU友好，适合骨干参考",
+    "mobilenet": "端侧友好(2.5M/20ms)但精度低(UAR 52%)",
+    "our_advantages": [
+      "单模型多任务：同时4个任务，减少部署复杂度",
+      "频谱学习CNN：CPU友好，比Transformer快5-10倍",
+      "CBAM注意力：提升特征表达",
+      "INT8量化：仅8MB，MT9655可运行",
+      "多语言：优先英语，支持西/法/德/意/日"
+    ]
+  },
+  "recommendation": "采用频谱学习CNN+CBAM作为骨干，~8M参数，INT8后8MB，MT9655可运行"
+}
