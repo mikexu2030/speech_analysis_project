@@ -12,15 +12,23 @@ from typing import Optional, Tuple
 from datetime import datetime
 
 CONFIG_PATH = Path(__file__).parent.parent / "config" / "git_credentials.json"
+GLOBAL_CONFIG_PATH = Path.home() / ".hermes" / "git_credentials.json"
 
 
 def load_config() -> dict:
-    """加载Git配置"""
-    if not CONFIG_PATH.exists():
-        return {"git": {"enabled": False}}
+    """加载Git配置 - 优先项目配置，其次全局配置"""
+    # 1. 优先项目级配置
+    if CONFIG_PATH.exists():
+        with open(CONFIG_PATH, 'r') as f:
+            return json.load(f)
     
-    with open(CONFIG_PATH, 'r') as f:
-        return json.load(f)
+    # 2. 其次全局配置
+    if GLOBAL_CONFIG_PATH.exists():
+        with open(GLOBAL_CONFIG_PATH, 'r') as f:
+            return json.load(f)
+    
+    # 3. 默认禁用
+    return {"git": {"enabled": False}}
 
 
 def check_git_installed() -> bool:
