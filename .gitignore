@@ -9,40 +9,83 @@ env/
 .venv/
 *.egg-info/
 
-# Models & Data (large files)
+# ============================================
+# 大型文件 - 绝对禁止提交 (> 10MB)
+# ============================================
+
+# 模型权重文件
 checkpoints/*.pt
 checkpoints/*.pth
 checkpoints/*.onnx
 checkpoints/*.tflite
 checkpoints/*.npy
-data/raw/
-data/processed/
-pretrained/
+checkpoints/*.safetensors
+models/**/*.pt
+models/**/*.pth
+models/**/*.onnx
+models/**/*.onnx.data
+models/**/*.safetensors
+models/**/*.bin
+models/**/*.ckpt
+models/pretrained/
+models/pretrained_finetuned/
+models/quantized/*.pt
+models/quantized/*.onnx
+models/quantized/*.onnx.data
+models/quantized/*.tflite
 
-# Logs
+# 数据集 (原始数据 + 处理后的数据)
+data/raw/
+data/processed/*.json
+data/processed/splits/
+!data/processed/.gitkeep
+*.zip
+*.tar.gz
+*.tgz
+*.tar
+*.wav
+*.mp3
+*.flac
+*.ogg
+
+# 日志和输出
 logs/
 runs/
 *.log
 tensorboard_logs/
-
-# OS
-.DS_Store
-Thumbs.db
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Outputs
 outputs/
 *.csv
 *.json.bak
 
-# Keep structure but ignore content
+# ============================================
+# Python 开发环境
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# ============================================
+# OS / IDE
+# ============================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ============================================
+# 保留目录结构 (空目录占位)
+# ============================================
 !data/splits/.gitkeep
 !checkpoints/.gitkeep
-models/quantized/hubert_multitask_int8.pt
-models/quantized/hubert_multitask.onnx
-models/quantized/hubert_multitask.onnx.data
+!data/processed/.gitkeep
