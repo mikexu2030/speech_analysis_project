@@ -41,7 +41,13 @@
   - 数据路径自动检测 `data/processed/splits`
 - **PyTorch安装中**: CPU版已卸载，GPU版(cu124)安装中，遇到cudnn依赖问题
 
-### 4. 历史完成工作
+### 4. 新增能力 (从kiro_skill扫描) ✅
+- **测试系统**: `tests/test_runner.py` - 6类测试 (data/audio/model/git/docx/env)
+- **Git自动上传**: `utils/git_auto_push.py` - 读取config/git_credentials.json自动commit/push
+- **DOCX读取**: `mcp-servers/docx_reader.py` - 纯文本/Markdown/元数据提取
+- **Git凭证配置**: `config/git_credentials.json` - 用户手动填写账户信息
+
+### 5. 历史完成工作
 - 修复best_model保存逻辑 ✅
 - 声纹识别验证 (90.67%准确率) ✅
 - 预训练模型评测 (HuBERT最佳) ✅
