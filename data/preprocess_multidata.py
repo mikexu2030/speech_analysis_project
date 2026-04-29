@@ -291,38 +291,54 @@ def process_tess(data_dir: str) -> List[Dict]:
     if not data_path.exists():
         return samples
     
-    for emotion_dir in sorted(data_path.glob('*/')):
-        if not emotion_dir.is_dir():
+    # TESS may be under 'audio/' subdirectory
+    search_paths = [data_path, data_path / 'audio']
+    
+    for search_path in search_paths:
+        if not search_path.exists():
             continue
-        
-        # 从目录名提取情绪
-        dir_name = emotion_dir.name
-        emotion_match = re.match(r'[OY]AF_(\w+)', dir_name)
-        if emotion_match:
-            emotion = emotion_match.group(1).lower()
-        else:
-            emotion = dir_name.lower()
-        
-        mapped_emotion = EMOTION_MAPPING['tess'].get(emotion)
-        if mapped_emotion is None:
-            continue
-        
-        # 判断说话人和性别
-        speaker_id = 101 if 'OAF' in dir_name else 102
-        gender = 0  # TESS全是女性
-        
-        for wav_file in sorted(emotion_dir.glob('*.wav')):
-            samples.append({
-                'audio_path': str(wav_file),
-                'dataset': 'tess',
-                'emotion': mapped_emotion,
-                'speaker_id': speaker_id,
-                'gender': gender,
-                'language': 'en',
-                'metadata': {
-                    'original_emotion': emotion,
-                }
-            })
+            
+        for emotion_dir in sorted(search_path.glob('*/')):
+            if not emotion_dir.is_dir():
+                continue
+            
+            # 从目录名提取情绪
+            dir_name = emotion_dir.name
+            
+            # Parse folder name like OAF_angry, YAF_happy, OAF_Pleasant_surprise, etc.
+            emotion_match = re.match(r'[OY]AF[_-]([\w_]+)', dir_name, re.IGNORECASE)
+            if emotion_match:
+                emotion = emotion_match.group(1).lower()
+            else:
+                emotion = dir_name.lower()
+            
+            # Normalize emotion names
+            emotion = emotion.replace('pleasant_surprise', 'ps').replace('pleasant_surprised', 'ps')
+            
+            mapped_emotion = EMOTION_MAPPING['tess'].get(emotion)
+            if mapped_emotion is None:
+                # Try without underscore variations
+                emotion_alt = emotion.replace('_', '')
+                mapped_emotion = EMOTION_MAPPING['tess'].get(emotion_alt)
+                if mapped_emotion is None:
+                    continue
+            
+            # 判断说话人和性别
+            speaker_id = 101 if 'OAF' in dir_name.upper() else 102
+            gender = 0  # TESS全是女性
+            
+            for wav_file in sorted(emotion_dir.glob('*.wav')):
+                samples.append({
+                    'audio_path': str(wav_file),
+                    'dataset': 'tess',
+                    'emotion': mapped_emotion,
+                    'speaker_id': speaker_id,
+                    'gender': gender,
+                    'language': 'en',
+                    'metadata': {
+                        'original_emotion': emotion,
+                    }
+                })
     
     return samples
 

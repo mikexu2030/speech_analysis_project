@@ -4,7 +4,7 @@
 """
 
 import os
-os.environ['CUDA_VISIBLE_DEVICES'] = '2,3'
+os.environ['CUDA_VISIBLE_DEVICES'] = '0,1,2,3'
 
 import torch
 import torch.nn as nn
@@ -48,7 +48,7 @@ class PretrainedSpeechModel(nn.Module):
         embedding_dim: int = 192,
         num_speakers: int = 1000,
         num_age_groups: int = 5,
-        num_emotions: int = 7,
+        num_emotions: int = 8,
         freeze_backbone: bool = True
     ):
         super().__init__()
@@ -171,12 +171,23 @@ def train_pretrained_model(
     print(f"Using device: {device}")
     if torch.cuda.is_available():
         print(f"GPU: {torch.cuda.get_device_name(0)}")
+        print(f"Available GPUs: {torch.cuda.device_count()}")
+        for i in range(torch.cuda.device_count()):
+            print(f"  GPU {i}: {torch.cuda.get_device_name(i)}")
+    else:
+        print("WARNING: CUDA not available, using CPU!")
     
-    # 加载数据
-    with open('data/splits/train.json', 'r') as f:
+    # 加载数据 - 使用新的多数据集划分
+    data_dir = 'data/processed/splits'
+    if not os.path.exists(data_dir):
+        data_dir = 'data/splits'
+    
+    with open(f'{data_dir}/train.json', 'r') as f:
         train_data = json.load(f)
-    with open('data/splits/val.json', 'r') as f:
+    with open(f'{data_dir}/val.json', 'r') as f:
         val_data = json.load(f)
+    
+    print(f"Train samples: {len(train_data)}, Val samples: {len(val_data)}")
     
     # 特征提取器
     feature_extractor = Wav2Vec2FeatureExtractor.from_pretrained(pretrained_path)
@@ -185,17 +196,26 @@ def train_pretrained_model(
     train_dataset = PretrainedDataset(train_data, feature_extractor)
     val_dataset = PretrainedDataset(val_data, feature_extractor)
     
-    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=0, pin_memory=True if torch.cuda.is_available() else False)
-    val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False, num_workers=0, pin_memory=True if torch.cuda.is_available() else False)
+    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=4, pin_memory=True if torch.cuda.is_available() else False)
+    val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False, num_workers=4, pin_memory=True if torch.cuda.is_available() else False)
     
     # 模型
     num_speakers = max([s['speaker_id'] for s in train_data]) + 1
+    num_emotions = max([s['emotion'] for s in train_data]) + 1
+    print(f"Num speakers: {num_speakers}, Num emotions: {num_emotions}")
+    
     model = PretrainedSpeechModel(
         pretrained_model_name=pretrained_path,
         num_speakers=num_speakers,
+        num_emotions=num_emotions,
         freeze_backbone=freeze_backbone
     )
     model.to(device)
+    
+    # 多GPU支持
+    if torch.cuda.device_count() > 1:
+        print(f"Using {torch.cuda.device_count()} GPUs with DataParallel")
+        model = torch.nn.DataParallel(model)
     
     # 优化器 - 使用更大学习率
     optimizer = torch.optim.AdamW(
@@ -299,12 +319,14 @@ def train_pretrained_model(
         print(f"  Train Acc: Speaker={train_correct['speaker']/train_total*100:.1f}%, Gender={train_correct['gender']/train_total*100:.1f}%, Emotion={train_correct['emotion']/train_total*100:.1f}%")
         print(f"  Val Acc: Speaker={val_correct['speaker']/val_total*100:.1f}%, Gender={val_correct['gender']/val_total*100:.1f}%, Emotion={val_correct['emotion']/val_total*100:.1f}%")
         
-        # 保存最佳模型
+    # 保存最佳模型 - 处理DataParallel包装
         val_metric = val_correct['emotion'] / val_total  # 基于情绪准确率
         if val_metric > best_val_metric:
             best_val_metric = val_metric
             Path(output_dir).mkdir(parents=True, exist_ok=True)
-            torch.save(model.state_dict(), f"{output_dir}/best_model.pt")
+            # 保存原始模型状态，不保存DataParallel包装
+            model_to_save = model.module if hasattr(model, 'module') else model
+            torch.save(model_to_save.state_dict(), f"{output_dir}/best_model.pt")
             print(f"  ✅ Saved best model (val emotion acc: {val_metric*100:.1f}%)")
     
     print(f"\nTraining complete! Best val emotion acc: {best_val_metric*100:.1f}%")
