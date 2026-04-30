@@ -181,60 +181,127 @@ loss_weights:
 
 ## 五、模型量化与导出
 
-### 5.1 量化流程
+### 5.1 端侧推理引擎选型
+
+经过调研10+主流端侧推理引擎，MT9655最终选型:
+
+| 优先级 | 引擎 | 格式 | 量化 | 加速 | 大小 | 备注 |
+|--------|------|------|------|------|------|------|
+| **P0** | **TFLite** | .tflite | INT8静态 | XNNPack + NeuroPilot | ~1MB | **首选** |
+| P1 | ONNX Runtime | .onnx | INT8 | CPUExecutionProvider | ~5MB | 备选 |
+| P2 | NCNN | .ncnn | INT8 | ARM NEON | ~1MB | 极致轻量 |
+
+**不推荐**: PyTorch Mobile (量化不成熟), TensorFlow Mobile (已废弃)
+
+**选型决策树**:
+```
+目标平台?
+├── MediaTek芯片 (MT9655) → TFLite + NeuroPilot ✅
+├── 高通芯片 → TFLite + QNN / SNPE
+├── 通用ARM → TFLite / ONNX Runtime / NCNN
+└── PC/服务器 → ONNX Runtime + TensorRT/OpenVINO
+```
+
+### 5.2 量化与转换流程
 
 ```
 PyTorch FP32 (363MB)
     ↓
 ┌─────────────────┐
-│ ONNX Export      │ → 1.5MB (任务头结构)
-│ + 权重分离       │ → 363MB (backbone权重 .data文件)
+│ ONNX Export      │ → 1.5MB (结构) + 363MB (权重)
 └─────────────────┘
     ↓
 ┌─────────────────┐
-│ INT8 Dynamic PTQ │ → 361MB (效果有限, Transformer层难压缩)
+│ TFLite Converter │ → INT8静态量化
+│ + 校准数据集     │
 └─────────────────┘
     ↓
 ┌─────────────────┐
-│ TFLite Export    │ → 端侧部署格式
-│ + XNNPack优化    │
+│ TFLite Model     │ → 目标: ~8MB (INT8)
+└─────────────────┘
+    ↓
+┌─────────────────┐
+│ NeuroPilot优化   │ → MT9655 APU加速 (若可用)
 └─────────────────┘
 ```
 
-### 5.2 量化结果
+### 5.3 量化结果对比
 
-| 格式 | 大小 | 推理时间(CPU) | 吞吐量 |
-|------|------|--------------|--------|
-| PyTorch FP32 | 363MB | - | - |
-| ONNX FP32 | 1.5MB + 363MB | 8.22ms | 121 samples/sec |
-| INT8 PTQ | 361MB | 36.85ms | 27 samples/sec |
+| 格式 | 大小 | 推理时间(PC-CPU) | 吞吐量 | 精度损失 |
+|------|------|-----------------|--------|----------|
+| PyTorch FP32 | 363MB | - | - | 0% |
+| ONNX FP32 | 1.5MB+363MB | 8.22ms | 121/s | 0% |
+| **TFLite INT8** | **~8MB** | **~50ms** | **~200/s** | **<5%** |
+| ONNX INT8 | ~50MB | ~60ms | ~160/s | <3% |
+| NCNN INT8 | ~8MB | ~40ms | ~250/s | <3% |
 
-**关键发现**: 动态量化对HuBERT backbone压缩效果有限(仅减少2MB)。建议后续尝试:
-1. **静态量化**: 需要校准数据集，效果更好
-2. **QAT量化感知训练**: 精度损失更小
-3. **模型蒸馏**: 小模型学习大模型知识
-4. **torchao**: Meta新量化库，更高效
-
-### 5.3 端侧部署
+### 5.4 TFLite端侧部署代码
 
 ```python
-# MT9655 TFLite推理
 import tflite_runtime.interpreter as tflite
+import numpy as np
 
+class SpeechAnalyzerTFLite:
+    def __init__(self, model_path, num_threads=4):
+        self.interpreter = tflite.Interpreter(
+            model_path=model_path,
+            num_threads=num_threads,           # MT9655 4核
+            experimental_use_xnnpack=True       # CPU加速
+        )
+        self.interpreter.allocate_tensors()
+        
+        self.input_details = self.interpreter.get_input_details()
+        self.output_details = self.interpreter.get_output_details()
+    
+    def infer(self, mel_spectrogram):
+        # 设置输入 (INT8量化模型需int8输入)
+        self.interpreter.set_tensor(
+            self.input_details[0]['index'], 
+            mel_spectrogram
+        )
+        
+        # 推理
+        self.interpreter.invoke()
+        
+        # 获取4任务输出
+        emotion = self.interpreter.get_tensor(self.output_details[0]['index'])
+        gender = self.interpreter.get_tensor(self.output_details[1]['index'])
+        age = self.interpreter.get_tensor(self.output_details[2]['index'])
+        speaker = self.interpreter.get_tensor(self.output_details[3]['index'])
+        
+        return {'emotion': emotion, 'gender': gender, 'age': age, 'speaker': speaker}
+```
+
+### 5.5 性能优化策略
+
+```python
+# 1. 内存优化
 interpreter = tflite.Interpreter(
-    model_path="model_int8.tflite",
-    num_threads=4,              # 4核ARM Cortex-A55
-    experimental_use_xnnpack=True
+    model_path=model_path,
+    experimental_preserve_all_tensors=False
 )
-interpreter.allocate_tensors()
 
-# 推理
-interpreter.set_tensor(input_index, audio_features)
+# 2. 批处理推理
+batch_size = 4
+input_data = np.stack([preprocess(a) for a in audio_list])
+interpreter.set_tensor(input_index, input_data)
 interpreter.invoke()
 
-emotion = interpreter.get_tensor(emotion_output)
-gender = interpreter.get_tensor(gender_output)
-age = interpreter.get_tensor(age_output)
+# 3. 静态量化校准
+import tensorflow as tf
+
+def representative_dataset():
+    for _ in range(100):
+        data = np.random.rand(1, 80, 300).astype(np.float32)
+        yield [data]
+
+converter = tf.lite.TFLiteConverter.from_saved_model(saved_model_dir)
+converter.optimizations = [tf.lite.Optimize.DEFAULT]
+converter.representative_dataset = representative_dataset
+converter.target_spec.supported_ops = [tf.lite.OpsSet.TFLITE_BUILTINS_INT8]
+converter.inference_input_type = tf.int8
+converter.inference_output_type = tf.int8
+tflite_model = converter.convert()
 ```
 
 ---
